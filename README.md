@@ -1,4 +1,4 @@
-# scss-webpack-gulp
+# less-webpack-gulp
 ## Frontend boilerplate with less
 ***
 
