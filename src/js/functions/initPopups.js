@@ -38,11 +38,11 @@ export function initMagnificInline(triggerItems) {
 	}
 }
 
-export function initMagnificGallery(popupGalleryItems) {
+export function initMagnificGallery(popupGalleryItems, popuGalleryTriggerSelector) {
 	if(popupGalleryItems.length) {
-		popupGalleryItems.forEach(galleryItem => {
-			galleryItem.magnificPopup({
-				delegate: 'a.img-wrapper',
+		for(let i = 0; i < popupGalleryItems.length; i++) {
+			popupGalleryItems.eq(i).magnificPopup({
+				delegate: popuGalleryTriggerSelector,
 				type: 'image',
 				tLoading: 'Loading image #%curr%...',
 				mainClass: 'mfp-img-mobile mfp-with-zoom',
@@ -83,7 +83,7 @@ export function initMagnificGallery(popupGalleryItems) {
 					}
 				}
 			});
-		});
+		}
 	}
 }
 
