@@ -19,6 +19,7 @@ import {initSLick} from './functions/initSliders.js';
 import {mobileNavToggle} from './functions/utils.js';
 import {dropDown} from './functions/utils.js';
 import {removeToggle} from './functions/utils.js';
+import {tabs} from './functions/utils.js';
 
 $(window).on('load', function(){
 	if(/iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
